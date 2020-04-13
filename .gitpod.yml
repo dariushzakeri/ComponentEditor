@@ -6,3 +6,5 @@ ports:
 tasks:
   - init: git submodule init && git submodule update && npm install --only=prod
     command: git submodule update && npm start
+image:
+  file: .gitpod.Dockerfile
